@@ -1,0 +1,135 @@
+@import '../../../assets/styles/reference.scss';
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    border-radius: 10px;
+    height: auto;
+    margin-right: 10px;
+
+    .btn {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        margin: 8px;
+        padding: 1px;
+
+        &.active {
+            position: absolute;
+            top: 300px;
+            align-self: center;
+
+            .line1 {
+                transform: translateY(10.5px) translateX(5px) rotate(45deg) scale(0.6);
+            }
+
+            .line2 {
+                opacity: 0;
+            }
+
+            .line3 {
+                transform: translateY(-11.5px) translateX(-6px) rotate(-45deg) scale(0.6);
+            }
+        }
+    }
+    .line {
+        background-color: $vermelhoEscuro;
+        width: 30px;
+        height: 5px;
+        position: absolute;
+        border-radius: 5px;
+        transition: all .3s;
+
+        &.line1 {
+            top: 0%;
+        }
+
+        &.line2 {
+            top: 35%;
+        }
+
+        &.line3 {
+            top: 70%;
+        }
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+
+        div {
+            background-color: $laranjaEscuro;
+            border: 1px solid $azulEscuro;
+            box-shadow: 5px 5px 0px 0px $azulEscuro;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 5px 10px;
+            margin-right: 0px;
+        }
+
+        div:hover {
+            background-color: $azulClaro;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            color: $fonteCinza;
+            text-decoration: none;
+        }
+    }
+
+}
+
+@media (min-width: 992px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 0px;
+        border: 0px;
+        background-color: transparent;
+        height: auto;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    ul.show,
+    ul.hide {
+        display: flex;
+        flex-direction: row;
+
+        div {
+            border-bottom: 2px solid $azulEscuro;
+            border-right: 2px solid $azulEscuro;
+            padding: 10px;
+            margin: 5px 5px;
+
+        }
+
+        div:hover {
+            background-color: $azulClaro;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+}

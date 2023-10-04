@@ -1,0 +1,44 @@
+@import '../../assets/styles/reference.scss';
+
+
+.header{
+    background-color: $cinzaClaro;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    @media (min-width: 992px){
+        background-color: $cinzaClaro;
+        display: flex;
+        padding: 10px;
+        align-items: center;
+    }
+    .item1 {
+        flex-grow: 1;
+        font-size: 40px;
+        padding: 5px 15px;  
+
+        img {
+            width: 100px;
+            height: 50px;
+        }     
+
+        @media (min-width:992px){
+            flex-grow: 1;
+            font-size: 40px;
+            margin-left: 25px;
+            margin-bottom: 10px;
+            padding: 5px 15px;
+        }
+    }
+    .item2{
+        margin-left: 10px;
+        padding: 5px;
+        
+        @media (min-width:992px){
+            margin-left: 10px;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+    }
+}
