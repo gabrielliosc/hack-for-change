@@ -170,10 +170,10 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- CONTACT -->
 ## Contato colaboradores
 
-Carolina - [https://github.com/CavMCarolina](https://github.com/CavMCarolina)
-Gabrielli Oliveira - [https://github.com/gabrielliosc](https://github.com/gabrielliosc)
-Juan Godoy - [https://github.com/Jixatos](https://github.com/Jixatos)
-Lívia Oliveira - [https://github.com/liviaaoliveira](https://github.com/liviaaoliveira)
-Valéria Harumi - [https://github.com/valeriaharumi](https://github.com/valeriaharumi)
+- Carolina - [https://github.com/CavMCarolina](https://github.com/CavMCarolina)
+- Gabrielli Oliveira - [https://github.com/gabrielliosc](https://github.com/gabrielliosc)
+- Juan Godoy - [https://github.com/Jixatos](https://github.com/Jixatos)
+- Lívia Oliveira - [https://github.com/liviaaoliveira](https://github.com/liviaaoliveira)
+- Valéria Harumi - [https://github.com/valeriaharumi](https://github.com/valeriaharumi)
 
 <p align="right">(<a href="#readme-top">voltar para o topo</a>)</p>
