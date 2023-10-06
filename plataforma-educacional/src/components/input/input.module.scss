@@ -1,0 +1,15 @@
+@import "../../assets/styles/reference.scss";
+
+.input {
+    width: 124%;
+    border-bottom: 1px solid #ffffff91;
+}
+
+input {
+    width: 47%;
+    color: #FFFFFF;
+}
+
+input::placeholder {
+    color: #ffffff8e;
+}

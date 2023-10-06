@@ -1,0 +1,48 @@
+@import "../../assets/styles/reference.scss";
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+.container {
+    background-image: url(../../assets/img/livro-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0px right 323px;
+    padding-bottom: 295px;
+}
+.form {
+    font-family: "Indie Flower", cursive;
+    color: #ffff;
+    margin: 76px 404px 76px 404px;
+    background-color: #145089;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    .cadastro {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding-left: 8%;
+    }
+    @media (min-width: 992px) {
+        display: flex;
+        padding: 10px;
+        align-items: flex-start;
+    }
+    .logflex {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    label {
+        font-size: 25px;
+        color: #ffffff;
+    }
+    Input {
+        font-family: "Indie Flower", cursive;
+        background-color: #145089;
+        font-size: 25px;
+        border: none;
+        outline: none;
+    }
+ 
+}
