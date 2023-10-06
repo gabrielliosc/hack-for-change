@@ -1,14 +1,15 @@
 @import '../../assets/styles/reference.scss';
 
-
 .header{
-    background-color: $cinzaClaro;
+    background: $cabecalho;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    border-radius: 0px 0px 30px 30px;
+    height: 15vh;
 
     @media (min-width: 992px){
-        background-color: $cinzaClaro;
+        background: $cabecalho;
         display: flex;
         padding: 10px;
         align-items: center;
@@ -16,11 +17,11 @@
     .item1 {
         flex-grow: 1;
         font-size: 40px;
-        padding: 5px 15px;  
+        padding: 0px 15px;  
 
         img {
-            width: 100px;
-            height: 50px;
+            width: 70px;
+            height: 65px;
         }     
 
         @media (min-width:992px){

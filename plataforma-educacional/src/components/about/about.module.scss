@@ -1,0 +1,85 @@
+@import '../../assets/styles/reference.scss';
+
+.sobre {
+    padding: 10px 30px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    color: white;
+
+    @media (min-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+    }
+
+    .artist {
+        display: flex;
+        flex-direction: column-reverse;
+
+        @media (min-width: 992px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .coluna {
+            text-align: justify;
+            padding: 0px;
+            margin: 15px 0px;
+            line-height: 1.5;
+
+            @media (min-width: 992px) {
+                padding: 10px;
+                margin: 0px;
+                width: 500px;
+            }
+            a{
+                color: $azulEscuro;
+                font-weight: 600;
+            }
+        }
+
+        .artistPicture {
+            height: auto;
+            width: auto;
+            margin: 10px 0px;
+            border: 2px solid $azulEscuro;
+            border-radius: 20px;
+            box-shadow: 10px 10px 0px 0px $azulEscuro;
+
+            @media (min-width: 992px) {
+                height: 500px;
+                width: 650px;
+                margin: 0px;
+            }
+        }
+    }
+
+    span {
+        display: flex;
+        flex-direction: column;
+        
+        p {
+            margin-bottom: 10px;
+        }
+
+        a {
+            width: fit-content;
+            align-self: end;
+        }
+
+        @media (min-width: 992px) {
+            display: block;
+        }
+    }
+    
+    h2{ 
+        font-size: 25px;
+        padding: 10px 0px;
+
+        @media (min-width: 992px) {
+            padding: 10px;
+            margin: 30px 0px;
+        }
+    }
+
+}

@@ -1,7 +1,7 @@
 /*Color Pallete*/
 //Azul
-$azulEscuro: #022c7a;
-$azulClaro: #00b8f0;
+$azulEscuro: #145089;
+$azulClaro: #0367B0;
 
 //Laranja
 $laranjaEscuro: #b43f05;
@@ -11,6 +11,9 @@ $laranjaClaro: #df7c25;
 $vermelhoEscuro: #2c0c02;
 $vermelhoClaro: #8d1004;
 
+//Amarelo
+$amareloPastel: #ebce85;
+
 //Cinza
 $preto: #1e1e22;
 $cinzaEscuro: #434246;
@@ -19,3 +22,9 @@ $cinzaClaro: #7a7c80;
 //Fonts
 $fonteCinza: #3b3b3b;
 $fonteBranca: #eeebeb;
+
+//Gradient
+$diamond: radial-gradient(50% 50% at 50% 50%, #0367B0 24.06%, #0367B0 54.27%, #145089 100%);
+$cabecalho: linear-gradient(180deg, #F2BD35 6.49%, #EE892B 47.12%, #EE892B 100%);
+$background: linear-gradient(180deg, #2FA1F4 18.47%, #0367B0 66.91%, #145089 100%)
+

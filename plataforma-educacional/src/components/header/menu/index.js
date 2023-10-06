@@ -28,12 +28,12 @@ export default function Menu() {
     },
     {
       nome: "Perfil",
-      route: "/perfil",
-    },
-    {
-      nome: "Teste de Habilidade",
-      route: "/teste-habilidade",
-    },
+      route: "/perfil"},
+    // },
+    // {
+    //   nome: "Teste de Habilidade",
+    //   route: "/teste-habilidade",
+    // },
     {
       nome: "Mapa",
       route: "/mapa",

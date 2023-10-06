@@ -1,0 +1,25 @@
+@import '../../../assets/styles/reference.scss';
+
+.container{
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    margin: 30px;
+    h3{
+        font-size: 30px;
+    }
+    .estatistica{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        div{
+            margin: 10px;
+            padding: 0px 10px;
+            border-right: 2px solid white;
+            border-left: 2px solid white;
+            h4{
+                font-size: 20px;
+            }
+        }
+    }
+}

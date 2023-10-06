@@ -1,0 +1,88 @@
+@import '../../assets/styles/reference.scss';
+
+.pagina {
+    height: 80vh;
+
+    .perfil {
+        font-family: 'Inconsolata', monospace;
+        font-size: 20px;
+        line-height: 1.5;
+        display: flex;
+        justify-content: flex-start;
+        margin: 30px;
+        color: white;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            background: $diamond;
+            margin-right: 30px;
+            padding: 20px 30px;
+            width: 800px;
+            height: 300px;
+            border-radius: 30px;
+
+            div {
+                margin: 10px 10px;
+            }
+
+            .coluna1 {
+                width: 50%;
+                text-align: center;
+
+                img {
+                    width: 267px;
+                    height: 251px;
+                }
+            }
+
+            .coluna2 {
+                width: 50%;
+                color: white;
+
+                .pontuacao {
+                    font-size: 30px;
+                    margin-bottom: 10px;
+
+                    span {
+                        background-color: $amareloPastel;
+                        border-radius: 10px;
+                        padding: 5px 10px;
+                        color: $fonteCinza;
+                        font-weight: 600;
+                    }
+                }
+
+                .seguidores {
+                    padding-top: 5px;
+                    font-family: 'Indie Flower', cursive;
+                }
+            }
+        }
+
+        .carteira {
+            justify-items: left;
+            width: 200px;
+            height: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px 0px;
+
+            span {
+                background-color: $amareloPastel;
+                border-radius: 10px;
+                padding: 5px 10px;
+                margin-right: 10px;
+                color: $fonteCinza;
+                font-weight: 600;
+                height: fit-content;
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
