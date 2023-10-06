@@ -8,7 +8,7 @@ namespace PlataformaEducacional.Api.Models
     {
         [Key]
         [Column("ID_MAPA")]
-        public int MapaId { get; set; }
+        public int IdMapa { get; set; }
 
         [Column("NOME_MAPA")]
         public string NomeMapa { get; set; }
@@ -16,21 +16,9 @@ namespace PlataformaEducacional.Api.Models
         [Column("NIVEL")]
         public int Nivel {  get; set; }
 
-        [Column("MATERIAS_ID_MATERIA")]
+        [Column("ID_MATERIA")]
         public int IdMateria { get; set; }
 
-        public MateriaModel? Materia { get; set; }
-
-        public IList<FaseModel> Fases { get; set; }
-
         public MapaModel() { }
-
-        public MapaModel(int mapaId, string nomeMapa, int nivel, int idMateria)
-        {
-            MapaId = mapaId;
-            NomeMapa = nomeMapa;
-            Nivel = nivel;
-            IdMateria = idMateria;
-        }
     }
 }

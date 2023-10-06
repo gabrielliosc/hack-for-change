@@ -3,12 +3,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PlataformaEducacional.Api.Models
 {
-    [Table("USUARIO")]
+    [Table("USUARIOS")]
     public class UsuarioModel
     {
         [Key]
         [Column("ID_USUARIO")]
-        public int UsuarioId { get; set; }
+        public int IdUsuario { get; set; }
 
         [Column("NOME_USUARIO")]
         public string NomeUsuario { get; set; }
@@ -39,8 +39,6 @@ namespace PlataformaEducacional.Api.Models
 
         [Column("IMG_PERFIL")]
         public byte[]? ImagemPerfil { get; set; }
-
-        public IList<UsuarioMapaModel>? MapasUsuario { get; set; }
 
         public UsuarioModel() { }
 

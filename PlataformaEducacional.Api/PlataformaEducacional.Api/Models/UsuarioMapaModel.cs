@@ -8,7 +8,7 @@ namespace PlataformaEducacional.Api.Models
     {
         [Key]
         [Column("ID_USUARIO_MAPAS")]
-        public int UsuarioMapaId { get; set; }
+        public int IdUsuarioMapa { get; set; }
 
         [Column("STATUS_MAPA")]
         public string UsuarioMapaStatus { get; set; }
@@ -16,15 +16,11 @@ namespace PlataformaEducacional.Api.Models
         [Column("PONTUACAO_MAPA")]
         public int? PontuacaoMapa {  get; set; }
 
-        [Column("USUARIO_ID_USUARIO")]
-        public int UsuarioId { get; set; }
+        [Column("ID_USUARIO")]
+        public int IdUsuario { get; set; }
 
-        public UsuarioModel? Usuario { get; set; }
-
-        [Column("MAPAS_ID_MAPA")]
-        public int MapaId { get; set; }
-
-        public MapaModel? Mapa { get; set; }
+        [Column("ID_MAPA")]
+        public int IdMapa { get; set; }
 
         public UsuarioMapaModel() { }
 

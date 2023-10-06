@@ -74,7 +74,7 @@ namespace PlataformaEducacional.Api.Controllers
             try
             {
                 materiaRepository.Inserir(materia);
-                var location = new Uri(Request.GetEncodedUrl() + "/" + materia.MateriaId);
+                var location = new Uri(Request.GetEncodedUrl() + "/" + materia.IdMateria);
                 return Created(location, materia);
             }
             catch (Exception error)
@@ -114,7 +114,7 @@ namespace PlataformaEducacional.Api.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (materia.MateriaId != id)
+            if (materia.IdMateria != id)
             {
                 return NotFound();
             }

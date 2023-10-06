@@ -15,18 +15,13 @@ namespace PlataformaEducacional.Api.Repository
 
         public List<MapaModel> Listar()
         {
-            var lista = dataBaseContext.Mapa
-                .Include(mapa => mapa.Fases)
-                        .ToList<MapaModel>();
+            var lista = dataBaseContext.Mapa.ToList();
             return lista;
         }
 
         public MapaModel Consultar(int id)
         {
-            var mapa = dataBaseContext.Mapa
-                .Include(mapa => mapa.Fases)
-                        .Where(mapa => mapa.MapaId == id)
-                            .FirstOrDefault();
+            var mapa = dataBaseContext.Mapa.Find(id);
             return mapa;
         }
 

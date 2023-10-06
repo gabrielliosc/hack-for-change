@@ -8,7 +8,7 @@ namespace PlataformaEducacional.Api.Models
     {
         [Key]
         [Column("ID_MATERIA")]
-        public int MateriaId { get; set; }
+        public int IdMateria { get; set; }
 
         [Column("NOME_MATERIA")]
         public string NomeMateria { get; set; }
@@ -17,12 +17,5 @@ namespace PlataformaEducacional.Api.Models
         public string DescricaoMateria { get; set; }
 
         public MateriaModel() { }
-
-        public MateriaModel(int idMateria, string nomeMateria, string descricaoMateria)
-        {
-            MateriaId = idMateria;
-            NomeMateria = nomeMateria;
-            DescricaoMateria = descricaoMateria;
-        }
     }
 }
