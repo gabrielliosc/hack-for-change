@@ -7,7 +7,7 @@
 
   <h3 align="center">Hack for change - City solutions</h3>
   <p align="center">
-    Plataforma Educacional
+    Plataforma de Ensino Gamificada
   </p>
 </div>
 
@@ -37,13 +37,19 @@
         <li><a href="#installation-back">Instalação</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Uso</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contact">Contato colaboradores</a></li>
   </ol>
 </details>
 
+### Sobre o projeto
+Plataforma de Ensino Gamificada, a PEG, para
+jovens, incentivando o estudo por meio de
+entretenimento e competitividade.
 
+Com o foco de reforçar a matéria de aulas e
+exercícios práticos com avanços de
+dificuldades para cada matéria.
 
 
 ### Tecnologias utilizadas
@@ -66,11 +72,17 @@ Essas foram as tecnologias usadas para a implementação desse projeto.
 <!-- GETTING STARTED -->
 ## Front-end
 
+### Pré requisitos
+
+Ter o npm instalado na máquina
+
 ### Instalação
 
 * npm
+
+navegar até a pasta do projeto e rodar os seguintes comandos
   ```sh
-  npm install npm@latest -g
+  npm install
   ```
 
   ```sh
@@ -111,7 +123,10 @@ Essas foram as tecnologias usadas para a implementação desse projeto.
 ## Roadmap
 
 - [ ] Adicionar autenticação jwt a API
-- [ ] 
+- [ ] Permitir que o usuário insira uma foto de perfil ou customize seu avatar
+- [ ] Adicionar novos mapas e fases
+- [ ] Adicionar novas matérias
+- [ ] Implementar chat
 
 <p align="right">(<a href="#readme-top">voltar para o topo</a>)</p>
 
