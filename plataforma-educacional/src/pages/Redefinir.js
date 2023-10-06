@@ -1,12 +1,11 @@
-import FormLogin from "../components/formLogin";
 import Footer from "../components/footer";
 import Header from "../components/header";
-
-export default function Login() {
+import FormRedefinir from "../components/formRedefinir";
+export default function Redefinir() {
   return (
     <>
       <Header />
-      <FormLogin />
+      <FormRedefinir/>
       <Footer />
     </>
   );

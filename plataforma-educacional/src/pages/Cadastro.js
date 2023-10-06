@@ -1,7 +1,13 @@
+import FormCadastro from "../components/formCadastro";
+import Header from "../components/header";
+import Footer from "../components/footer";
+
 export default function Cadastro() {
   return (
     <div>
-      <p>Cadastro</p>
+      <Header />
+      <FormCadastro />
+      <Footer />
     </div>
   );
-};
+}

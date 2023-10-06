@@ -1,0 +1,17 @@
+.btn {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 25px;
+}
+
+a:-webkit-any-link {
+  margin-left: 10px;
+  font-family: "Indie Flower", cursive;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:-webkit-any-link:hover {
+  color: #ffffff8e;
+}
