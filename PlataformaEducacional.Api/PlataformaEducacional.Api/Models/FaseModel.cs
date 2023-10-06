@@ -8,7 +8,7 @@ namespace PlataformaEducacional.Api.Models
     {
         [Key]
         [Column("ID_FASE")]
-        public int FaseId { get; set; }
+        public int IdFase { get; set; }
 
         [Column("NOME_FASE")]
         public string? NomeFase { get; set;}
@@ -16,21 +16,11 @@ namespace PlataformaEducacional.Api.Models
         [Column("PERGUNTA_LABEL")]
         public string? LabelPergunta { get; set; }
 
-        [Column("MAPAS_ID_MAPA")]
+        [Column("ID_MAPA")]
         public int IdMapa { get; set; }
-
-        public MapaModel? Mapa { get; set; }
-
-        public IList<AlternativaModel> Alternativas { get; set; }
 
         public FaseModel()
         {
-        }
-
-        public FaseModel(int faseId, int idMapa)
-        {
-            FaseId = faseId;
-            IdMapa = idMapa;
         }
     }
 }

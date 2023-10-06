@@ -74,7 +74,7 @@ namespace PlataformaEducacional.Api.Controllers
             try
             {
                 tipoAlternativaRepository.Inserir(tipoAlternativa);
-                var location = new Uri(Request.GetEncodedUrl() + "/" + tipoAlternativa.TipoId);
+                var location = new Uri(Request.GetEncodedUrl() + "/" + tipoAlternativa.IdTipo);
                 return Created(location, tipoAlternativa);
             }
             catch (Exception error)
@@ -114,7 +114,7 @@ namespace PlataformaEducacional.Api.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (tipoAlternativa.TipoId != id)
+            if (tipoAlternativa.IdTipo != id)
             {
                 return NotFound();
             }

@@ -16,17 +16,14 @@ namespace PlataformaEducacional.Api.Repository
         public List<UsuarioModel> Listar()
         {
             var lista = dataBaseContext.Usuario
-                .Include(u => u.MapasUsuario)
-                        .ToList<UsuarioModel>();
+                        .ToList();
             return lista;
         }
 
         public UsuarioModel Consultar(int id)
         {
-            var usuario = dataBaseContext.Usuario
-                .Include(u => u.MapasUsuario)
-                        .Where(u => u.UsuarioId == id)
-                            .FirstOrDefault();
+            var usuario = dataBaseContext.Usuario.
+                Find(id);
             return usuario;
         }
 

@@ -74,7 +74,7 @@ namespace PlataformaEducacional.Api.Controllers
             try
             {
                 usuarioRepository.Inserir(usuario);
-                var location = new Uri(Request.GetEncodedUrl() + "/" + usuario.UsuarioId);
+                var location = new Uri(Request.GetEncodedUrl() + "/" + usuario.IdUsuario);
                 return Created(location, usuario);
             }
             catch (Exception error)
@@ -114,7 +114,7 @@ namespace PlataformaEducacional.Api.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (usuario.UsuarioId != id)
+            if (usuario.IdUsuario != id)
             {
                 return NotFound();
             }

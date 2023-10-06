@@ -74,7 +74,7 @@ namespace PlataformaEducacional.Api.Controllers
             try
             {
                 faseRepository.Inserir(fase);
-                var location = new Uri(Request.GetEncodedUrl() + "/" + fase.FaseId);
+                var location = new Uri(Request.GetEncodedUrl() + "/" + fase.IdFase);
                 return Created(location, fase);
             }
             catch (Exception error)
@@ -114,7 +114,7 @@ namespace PlataformaEducacional.Api.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (fase.FaseId != id)
+            if (fase.IdFase != id)
             {
                 return NotFound();
             }

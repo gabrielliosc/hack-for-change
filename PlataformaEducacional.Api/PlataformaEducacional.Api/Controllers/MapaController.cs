@@ -74,7 +74,7 @@ namespace PlataformaEducacional.Api.Controllers
             try
             {
                 mapaRepository.Inserir(mapa);
-                var location = new Uri(Request.GetEncodedUrl() + "/" + mapa.MapaId);
+                var location = new Uri(Request.GetEncodedUrl() + "/" + mapa.IdMapa);
                 return Created(location, mapa);
             }
             catch (Exception error)
@@ -114,7 +114,7 @@ namespace PlataformaEducacional.Api.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (mapa.MapaId != id)
+            if (mapa.IdMapa != id)
             {
                 return NotFound();
             }

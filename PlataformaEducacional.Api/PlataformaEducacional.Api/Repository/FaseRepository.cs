@@ -15,18 +15,13 @@ namespace PlataformaEducacional.Api.Repository
 
         public List<FaseModel> Listar()
         {
-            var lista = dataBaseContext.Fase
-                .Include(fase => fase.Alternativas) 
-                    .ToList<FaseModel>();
+            var lista = dataBaseContext.Fase.ToList();
             return lista;
         }
 
         public FaseModel Consultar(int id)
         {
-            var fase = dataBaseContext.Fase
-                .Include(fase => fase.Alternativas)
-                        .Where(fase => fase.FaseId == id)
-                            .FirstOrDefault();
+            var fase = dataBaseContext.Fase.Find(id);
             return fase;
         }
 
